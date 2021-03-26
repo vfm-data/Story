@@ -1,0 +1,58 @@
+How to create a new file with vim
+Author: Vivek Gite Last updated: February 24, 2021 2 comments
+How do I create and edit a file via SSH using a text editor such as vim on a Linux or Unix-like system?
+
+There are many ways to create a new file in Linux or Unix-like system. One can use a text editor such as vi or vim to create and edit a file. This page explains how to use vim text editor to create a file via SSH.
+
+ 
+ VIM text editor commands
+ Vim is a text editor to create or edit a text file, config file and programs on a Linux, macOS, and Unix-like system. There are two modes in vim:
+
+ Command mode : In this mode you can move around the file, delete text, copy/paste/undo/redo and more.
+ Insert mode : In this mode you can insert text or edit text.
+ How do I change mode from one to another when using vim?
+ To switch from insert mode to command mode press or type escape key (Esc). If you are ever unsure about something you typed, just press ESC to place you in Normal mode. Then retype the command you wanted.
+
+ To switch from command mode to insert mode type any one of the following characters:
+ Vim text editor commands are case-sensitive.
+
+ a : Append text following the current cursor position
+ A : Append text to the end of the current line
+ i : Insert text at the current cursor position
+ I : Insert text at the beginning of the cursor line
+ o (small o letter): Begin a new line below the cursor to insert text
+ O (capital O letter) : Begin a new line above the cursor to add text
+ How do I move the cursor around when working with vim?
+ To move the cursor, press the h,j,k,l keys as indicated:
+
+              ^
+	      k                   
+        < h       l >              
+	      j                     
+	      v
+							    The h key is at the left and moves left.
+							    The l key is at the right and moves right.
+							    The j key looks like a down arrow and moved down.
+							    The k key looks like a up arrow and moved up.
+							    You can use up, down, left and right arrow keys too. But, with hjkl keys you will be able to move around much faster.
+							    Steps to create and edit a file using vim
+							    Log into your server using SSH command: ssh user@cloud-vm-ip
+							    Type vim command to create a file named demo.txt: vim demo.txt
+							    Vim started with a new blank file
+							    Vim started with a new blank file
+
+							    To enter insert mode and to append text type the letter i (usually you do this by press Esc followed by i)
+							    Enter INSERT mode in vim
+							    Enter INSERT mode in vim
+
+							    Start entering text
+							    When done editing press the Esc key to go back to command mode
+							    Once in command mode to save and exit the file type a colon (:) followed by x. Press the Enter key.
+							    To save the file and exit the vim
+							    To save the file and exit the vim
+
+							    Summing up
+							    You learned how to create a new file using vim or vi text editor. Getting help is easy too. Hence, I suggest you read vim command tutorial by simply typing the following command at the CLI:
+							    $ vimtutor
+
+
