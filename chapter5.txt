@@ -1,0 +1,2 @@
+Adding new Chapter, again for illustrative purposes
+I'm starting to like vim for updating text docs will relative ease/
